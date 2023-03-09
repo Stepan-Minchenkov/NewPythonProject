@@ -12,6 +12,16 @@ b = Customer(user_data=user, phone='123-456', country='BLR',
              city='Minsk', zip_code='22wwww', address1='a', address2='b', information='s')
 b.save()
 
+user = User.objects.create_user('Third', password='third1234', email='minstepan@mail.ru')
+b = Customer(user_data=user, phone='123-456', country='BLR',
+             city='Minsk', zip_code='22wwww', address1='a', address2='b', information='s')
+b.save()
+
+user = User.objects.create_user('Fourth', password='fourth1234', email='qq4@mail.ru')
+b = Customer(user_data=user, phone='123-456', country='BLR',
+             city='Minsk', zip_code='22wwww', address1='a', address2='b', information='s')
+b.save()
+
 author = Author.objects.get(name='Agatha')
 serie = Serie.objects.get(name='Эркюль Пуаро')
 genre = Genre.objects.get(name='Детективы')

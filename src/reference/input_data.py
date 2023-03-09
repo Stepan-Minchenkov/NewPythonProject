@@ -34,7 +34,7 @@ b.save()
 # Genre filling
 b = Genre(name='Детективы', description='Классический, шпионский, исторический.')
 b.save()
-b = Genre(name='Документальная Литература', description='Биография, мемуары, география.')
+b = Genre(name='Документ Литература', description='Биография, мемуары, география.')
 b.save()
 b = Genre(name='Дом и семья', description='Кулинария, хобби, развечения.')
 b.save()
